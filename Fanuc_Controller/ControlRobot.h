@@ -18,6 +18,7 @@ public:
     void MatriceJacobienneInverse();
     void MatriceJacobiennePseudoInverse();
     Eigen::Matrix<float, 6, 1> InverseKinematic();
+    Eigen::Matrix4f TransformationMatrice;
 
 private:
 
@@ -27,7 +28,6 @@ private:
     Eigen::Matrix4f T34;
     Eigen::Matrix4f T45;
     Eigen::Matrix4f T56;
-    Eigen::Matrix4f TransformationMatrice;
     Eigen::Matrix<float, 6, 6> JacobienneMatrice;
     Eigen::Matrix<float, 6, 6> JacobienneInverse;
     Eigen::Matrix<float, 6, 1> InverseKinematicResultats;
